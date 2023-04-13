@@ -31,7 +31,9 @@ fp.forecast(x, h = 1, conf.level = 95)
 	contrain the lower and upper prediction intervals.
 }
 \references{
-OUR PAPER HERE
+Killick, R., Knight, M.I., Nason, G.P., Nunes M.A., Eckley I.A. (2023) Automatic Locally Stationary Time Series Forecasting with
+application to predicting U.K. Gross Value Added Time Series under sudden shocks caused by the COVID pandemic 
+\href{https://arxiv.org/abs/2303.07772}{arXiv:2303.07772}
 
 Hyndman, R.J. and Khandakar, Y. (2008) Automatic Time Series Forecasting:
 	The forecast package for R. \emph{Journal of Statistical Software},

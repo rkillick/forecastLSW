@@ -120,7 +120,9 @@ If \code{go.back} is a positive integer then a data frame with two
 	the row name of the data frame.
 }
 \references{
-OUR PAPER HERE
+Killick, R., Knight, M.I., Nason, G.P., Nunes M.A., Eckley I.A. (2023) Automatic Locally Stationary Time Series Forecasting with
+application to predicting U.K. Gross Value Added Time Series under sudden shocks caused by the COVID pandemic 
+\href{https://arxiv.org/abs/2303.07772}{arXiv:2303.07772}
 }
 \author{
 G.P. Nason

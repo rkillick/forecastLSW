@@ -1,17 +1,3 @@
 Version 1.0: 
-New package as of 20/2/23 containing routines originally in the lpacf package
+* Original, mostly written and constructed by Matt Nunes, Guy Nason and Rebecca Killick
 
-* corrected NAMESPACE and DESCRIPTION for dependency / imports
-* added data() calls in analyze.abmld2.Rd and analyze.windanomaly.Rd, and import of data from utils package in NAMESPACE.  Also edited dataset Rd files to have usage 
-data() to avoid check WARNING
-* edited reg.xyr to avoid multiclass logical error from try when matrix is positive definite
-* changed NAMESPACE to not export: ci.sym, reg.xyr, is.wholenumber, sig.sq, lacv.fc.leftwp,lpacf.leftwp.end
-* updated forecast.test to be GPN version
-* removed :: from non-exported function calls in forecast.lpacf (is.wholenumber, lacv.fc.leftwp, lpacf.leftwp,end)
-* changed analyze.windanomaly and analyze.abmld2 to recognise data internally
-* updated abmld2 data and associated man file for new range of data -> 2021, added dependence on R (>=3.5.0)
-* renamed forecast.plot to forecast.panel and added more flexible functionality for confidence 
-intervals, and sensible y axis labelling.  Updated analyze* functions accordingly, as well as man files for new arguments
-* changed maintainer to RK
-* analyze* updated to not output pdfs of figures
-* fp.forecast changed to have conf.level between 0 and 100 as in other forecast functions

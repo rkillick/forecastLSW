@@ -21,7 +21,7 @@
 Package: \tab lpacf\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
-Date: \tab 2023-02-20\cr
+Date: \tab 2023-03-07\cr
 License: \tab GPL-2\cr
 }
 The \code{\link{forecast.lpacf}} function computes forecasts of a locally
@@ -43,7 +43,9 @@ Rebecca Killick, Marina Knight, Guy Nason, Matt Nunes
 Maintainer: Rebecca Killick <r.killick@lancs.ac.uk>
 }
 \references{
-TBC
+Killick, R., Knight, M.I., Nason, G.P., Nunes M.A., Eckley I.A. (2023) Automatic Locally Stationary Time Series Forecasting with
+application to predicting U.K. Gross Value Added Time Series under sudden shocks caused by the COVID pandemic 
+\href{https://arxiv.org/abs/2303.07772}{arXiv:2303.07772}
 }
 \keyword{ package }
 \seealso{\code{\link{forecast.lpacf}},

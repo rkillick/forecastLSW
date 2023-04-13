@@ -1,13 +1,15 @@
 \name{abmld2}
 \docType{data}
 \alias{abmld2}
+\alias{abml}
 \title{
-Gross Value Added (GVA, Average) at basis prices: CP SA time series second differences
+Gross Value Added (GVA, Average) at basis prices: CP SA time series / second differenced series
 }
 \description{
  Essentially GVA is a component in the estimator for UK Gross Domestic Product (GDP) an important economic time series. The series can be downloaded from the UK Office of National Statistics website, see below for references.
 }
 \usage{
+data("abml")
 data("abmld2")
 }
 \format{
