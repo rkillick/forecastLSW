@@ -25,10 +25,10 @@ which.wavelet.best(x, n.to.test = 10, go.back=5,
 	but not too large.
 }
   \item{go.back}{Controls the \code{go.back} argument to
-	\code{\link{forecast.test}}. Number of repeats of the
+	\code{\link{testforecast}}. Number of repeats of the
 	procedure on successively one-unit of time earlier series.}
   \item{forecast.type}{The type of forecasting as detailed in
-	\code{\link{forecast.lpacf}}.
+	\code{\link{forecastlpacf}}.
 }
   \item{lapplyfn}{Type of list processing function. By default it
 	uses R's \code{lapply} function. However, if you use the
@@ -63,7 +63,7 @@ application to predicting U.K. Gross Value Added Time Series under sudden shocks
 Guy Nason
 }
 
-\seealso{\code{\link{forecast.test}} }
+\seealso{\code{\link{testforecast}} }
 \examples{
 #
 # Generate simulated example

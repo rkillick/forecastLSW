@@ -2,7 +2,7 @@ Package: forecastLSW
 Type: Package
 Title: Forecasting Routines for Locally Stationary Wavelet Processes
 Version: 1.0
-Date: 2023-04-13
+Date: 2023-04-24
 Authors@R: c(person("Rebecca", "Killick",role=c("aut","cre"),email="r.killick@lancs.ac.uk"), person("Matt", "Nunes", role="aut"), 
 			person("Guy", "Nason", role="aut"), person("Marina", "Knight", role="aut"), person("Idris", "Eckley", role="ctb"))
 Author: Rebecca Killick [aut, cre], Matt Nunes [aut], Guy Nason [aut], Marina Knight [aut], Idris Eckley [ctb]

@@ -21,19 +21,19 @@
 Package: \tab lpacf\cr
 Type: \tab Package\cr
 Version: \tab 1.0\cr
-Date: \tab 2023-03-07\cr
+Date: \tab 2023-04-24\cr
 License: \tab GPL-2\cr
 }
-The \code{\link{forecast.lpacf}} function computes forecasts of a locally
+The \code{\link{forecastlpacf}} function computes forecasts of a locally
 stationary (wavelet) time series using the localized partial autocorrelation
 to help with history identification. The results of such forecasting
-can be printed using \code{\link{print.forecast.lpacf}} or plotted
-with \code{\link{plot.forecast.lpacf}}.
+can be printed using \code{\link{print.forecastlpacf}} or plotted
+with \code{\link{plot.forecastlpacf}}.
 
-Two other useful functions are \code{\link{forecast.test}} which 
+Two other useful functions are \code{\link{testforecast}} which 
 runs some testing on forecasting some end values of a series using earlier
 values and compares the new forecasting with standard Box-Jenkins ARMA
-forecasting (visualisation via \code{\link{forecast.panel}}) and 
+forecasting (visualisation via \code{\link{forecastpanel}}) and 
 \code{\link{which.wavelet.best}} which attempts to identify which wavelet is 
 well-suited to forecasting a particular series.
 }
@@ -48,8 +48,8 @@ application to predicting U.K. Gross Value Added Time Series under sudden shocks
 \href{https://arxiv.org/abs/2303.07772}{arXiv:2303.07772}
 }
 \keyword{ package }
-\seealso{\code{\link{forecast.lpacf}},
-	\code{\link{forecast.test}},
+\seealso{\code{\link{forecastlpacf}},
+	\code{\link{testforecast}},
 	\code{\link{which.wavelet.best}}
 }
 \examples{

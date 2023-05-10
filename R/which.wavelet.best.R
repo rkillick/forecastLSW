@@ -4,7 +4,7 @@ function (x, n.to.test = 10, go.back=5, forecast.type = "recursive", lapplyfn = 
     calc.mse <- function(ff, x, n.to.test, forecast.type) {
         filter.number = ff$filter.number
         family = ff$family
-        ans <- forecastLSW::forecast.test(x = x, n.to.test = n.to.test, forecast.type = forecast.type, 
+        ans <- forecastLSW::testforecast(x = x, n.to.test = n.to.test, forecast.type = forecast.type, 
             filter.number = filter.number, family = family, plot.it = FALSE,
 		go.back=go.back, lapplyfn=lapplyfn)
 	if (go.back==0)	{

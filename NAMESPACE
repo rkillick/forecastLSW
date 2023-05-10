@@ -12,10 +12,10 @@ import(lpacf)
 
 #exportPattern("^[[:alpha:]]+")
 export(analyze.abmld2, analyze.windanomaly)
-export(dforecast.lpacf, forecast.lpacf, forecast.panel,forecast.test,fp.forecast, which.wavelet.best)
-export(plot.forecast.lpacf,print.forecast.lpacf, summary.forecast.lpacf)
+export(dforecastlpacf, forecastlpacf, forecastpanel,testforecast,fp.forecast, which.wavelet.best)
+export(plot.forecastlpacf,print.forecastlpacf, summary.forecastlpacf)
 
-S3method(plot,forecast.lpacf)
-S3method(print,forecast.lpacf)
-S3method(summary,forecast.lpacf)
+S3method(plot,forecastlpacf)
+S3method(print,forecastlpacf)
+S3method(summary,forecastlpacf)
 

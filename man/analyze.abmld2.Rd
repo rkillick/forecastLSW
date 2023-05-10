@@ -40,7 +40,7 @@ application to predicting U.K. Gross Value Added Time Series under sudden shocks
 Rebecca Killick
 }
 \seealso{
-\code{\link[lpacf]{lpacf.plot}}, \code{\link{forecast.lpacf}}
+\code{\link[lpacf]{lpacf.plot}}, \code{\link{forecastlpacf}}
 }
 \examples{
 \dontrun{
