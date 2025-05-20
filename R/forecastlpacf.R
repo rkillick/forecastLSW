@@ -59,12 +59,8 @@ function (x, h = 1, regularize = TRUE, lag.max = max(10, 2 *
         B = t(B) + B
         diag(B) = tmp
         for (i in 1:length(p)) {
-            if (p[i] == 1) {
-                RHS = 0
-            }
-            else {
-                RHS <- c(0, sp.lacv$lacv[len + h[i], 2:p[i]])
-            }
+            RHS <- sp.lacv$lacv[len + h[i], 2:(p[i]+1)]
+
             extra.var = sp.lacv$lacv[len + h[i], 1]
             pr = list(B = B[(max(p) - p[i] + 1):max(p), (max(p) - 
                 p[i] + 1):max(p)], RHS = RHS, extra.var = extra.var)
@@ -87,12 +83,8 @@ function (x, h = 1, regularize = TRUE, lag.max = max(10, 2 *
             tmp = diag(B)
             B = t(B) + B
             diag(B) = tmp
-            if (p == 1) {
-                RHS = 0
-            }
-            else {
-                RHS <- c(0, sp.lacv$lacv[len + H, 2:p])
-            }
+            RHS <- sp.lacv$lacv[len + H, 2:(p+1)]
+            
             extra.var = sp.lacv$lacv[len + H, 1]
             pr = list(B = B, RHS = RHS, extra.var = extra.var)
             class(pr) = "predeq"

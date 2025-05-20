@@ -78,16 +78,16 @@ lacv.fc.leftwp<-function(x, h=0, filter.number = 1, family = "DaubExPhase", smoo
   L <- (nc - 1)/2
   dimnames(Psi) <- list(NULL, c(-L:0, 1:L))
   if (is.null(lag.max)) 
-    the.lacv <- Smat %*% Psi[, (L + 1):ncol(Psi)]
+    the.lacv <- Smat %*% Psi[, (L + 1):ncol(Psi)] # 0:L
   else {
     if (L + 1 + lag.max > ncol(Psi)) {
       warning(paste("lag.max too high. Have reset it to ", 
                     ncol(Psi) - L - 1, ". Higher lags are zero"))
       lag.max <- ncol(Psi) - L - 1
     }
-    the.lacv <- Smat %*% Psi[, (L + 1):(L + 1 + lag.max)]
+    the.lacv <- Smat %*% Psi[, (L + 1):(L + 1 + lag.max)] # 0:lag.max
   }
-  the.lacor <- sweep(the.lacv, 1, the.lacv[, 1], FUN = "/")
+  the.lacor <- sweep(the.lacv, 1, the.lacv[, 1], FUN = "/") # sweep variance out
   out=list(lacv = the.lacv, lacr = the.lacor,S=Smat,binwidth=binwidth,filter.number=filter.number,family=family)
   class(out)='lacv'
   return(out)
