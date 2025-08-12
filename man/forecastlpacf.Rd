@@ -28,7 +28,7 @@ Logical.  If \code{regularize=TRUE} then the Yule-Walker matrix is regularized
 	before prediction using the method from Xie et al. (2007).
 	 If \code{regularize=FALSE} then no regularization takes place.
 }
-  \item{lag.max}{Maximum lag that the \code{\link{lpacf}} is calculated to.
+  \item{lag.max}{Maximum lag that the \code{\link[lpacf]{lpacf}} is calculated to.
 	If this is set too low, i.e. the automated estimation of the
 	dimension of the Yule-Walker matrix is equal to \code{max.lag},
 	then the function will print a warning message.
@@ -42,11 +42,11 @@ Other parameters to be passed to the periodogram and lacv (local autocovariance)
 }
 \details{
 The function calculates the wavelet periodogram followed by the lacv and
-\code{\link{lpacf}}. 
+\code{\link[lpacf]{lpacf}}. 
 NOTE: Often when local (windowed) estimates are created one assigns the
 estimated value to the central point in the window.
 This is NOT the approach we take here when calculating the lacv and
-\code{\link{lpacf}}.
+\code{\link[lpacf]{lpacf}}.
 Instead we operate a rear facing window where the estimate is assigned to the
 final point in the window.
 
