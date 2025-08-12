@@ -111,7 +111,7 @@ R. Killick
 }
 
 \seealso{
-\code{\link{lpacf}}, \code{\link{forecastpanel}},
+\code{\link[lpacf]{lpacf}}, \code{\link{forecastpanel}},
 	\code{\link{plot.forecastlpacf}},
 	\code{\link{print.forecastlpacf}},
 	\code{\link{summary.forecastlpacf}}}

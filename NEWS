@@ -1,3 +1,6 @@
+Version 1.1.1:
+* Added targets to Rd links to meet updated CRAN guidelines
+
 Version 1.0: 
-* Original, mostly written and constructed by Matt Nunes, Guy Nason and Rebecca Killick
+* Original, mostly written and constructed by Matt Nunes, Guy Nason, and Rebecca Killick
 

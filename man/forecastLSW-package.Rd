@@ -20,8 +20,8 @@
 \tabular{ll}{
 Package: \tab lpacf\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2023-04-24\cr
+Version: \tab 1.1.1\cr
+Date: \tab 2025-08-12\cr
 License: \tab GPL-2\cr
 }
 The \code{\link{forecastlpacf}} function computes forecasts of a locally

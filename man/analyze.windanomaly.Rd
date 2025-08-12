@@ -41,7 +41,7 @@ Rebecca Killick
 }
 
 \seealso{
-\code{\link{lpacf.plot}}, \code{\link{forecastlpacf}}
+\code{\link[lpacf]{lpacf.plot}}, \code{\link{forecastlpacf}}
 }
 \examples{
 \dontrun{
